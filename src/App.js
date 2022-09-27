@@ -27,7 +27,12 @@ function App() {
       imageUrl: "https://i.ibb.co/R70vBrQ/men.png",
     },
   ];
-  return <Directory categories={categories} />;
+  return (
+    <div>
+      Fuck
+      <Directory categories={categories} />{" "}
+    </div>
+  );
 }
 
 export default App;
