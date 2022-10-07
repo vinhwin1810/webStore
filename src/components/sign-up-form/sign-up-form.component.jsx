@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentAuth,
@@ -32,7 +33,9 @@ function SignUpForm() {
         email,
         password
       );
+
       await createUserDocumentAuth(user, { displayName });
+
       resetFormFields();
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
